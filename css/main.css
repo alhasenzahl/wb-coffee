@@ -1,0 +1,724 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/***** GENERAL STYLES *****/
+
+html, body {
+	width: 100%;
+	background-color: #533901;
+	font-size: 16px;
+	font-family: Hind;
+}
+
+/*
+==========================================================
+MOBILE STYLES
+==========================================================
+*/
+
+/***** HEADER STYLES *****/
+
+.logo {
+	width: 50%;
+}
+
+header {
+	text-align: center;
+}
+
+.header-text {
+	width: 90%;
+	margin: 0 5%;
+}
+
+header .header-text h1 {
+	font-family: Cabin Sketch;
+	color: #d0ffb1;
+	font-size: 2em;
+	line-height: 1.125em;
+	margin-top: 0px;
+}
+
+.header-text h3, .header-text h6 {
+	font-family: Chelsea Market;
+	color: #d0ffb1;
+}
+
+.header-text h3 {
+	font-size: .875em;
+}
+
+.header-text h6 {
+	margin-top: -8px;
+	font-size: .675em;
+}
+
+.main-img {
+	width: 100%;
+}
+
+/***** SIGN-UP STYLES *****/
+
+.sign-up {
+	text-align: center;
+	background-color: #d0ffb1;
+	margin-top: -22px;
+	padding: 30px 0;
+}
+
+.sign-up-content {
+	width: 90%;
+	margin: 0 5%;
+}
+
+.sign-up-text {
+	width: 100%;
+}
+
+.sign-up-form {
+	width: 100%;
+}
+
+.sign-up h1 {
+	font-family: Cabin Sketch;
+	font-size: 2em;
+	line-height: 1.125em
+}
+
+.sign-up h3 {
+	font-size: .875em;
+}
+
+.sign-up h4 {
+	font-size: 1.125em;
+	margin-bottom: 3px;
+}
+
+.newsletter-signup .input-field {
+	height: 2em;
+	width: 60%;
+	background-color: #d0ffb1;
+	border: 1px solid black;
+	box-sizing: border-box;
+}
+
+.newsletter-button {
+	margin-top: 5px;
+}
+
+.newsletter-button .btn {
+	background-color: #aff1fd;
+	border: none;
+	height: 2em;
+	width: 60%;
+	font-weight: 500;
+	font-size: 1.125em;
+}
+
+.sign-up h3, .sign-up h4 {
+	font-family: Chelsea Market;
+}
+
+/***** MENU INFO STYLES *****/
+
+.menu-info {
+	text-align: center;
+	width: 80%;
+	margin: 0 10%;
+	padding: 40px 0 0 0;
+}
+
+.menu, .products {
+	width: 100%;
+}
+
+.menu-info h3 {
+	font-family: Chelsea Market;
+	font-size: 1.125em;
+	color: #fff;
+}
+
+.menu-info p {
+	font-size: .875em;
+	color: #fff;
+	padding-bottom: 30px;
+}
+
+/***** CUSTOMER REVIEWS STYLES *****/
+
+.customer-reviews {
+	text-align: center;
+	background-color: #d0ffb1;
+}
+
+.customer-img {
+	width: 100%;
+	padding-bottom: 70%;
+	background-position: top;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#coffee-girl {
+	background-image:  url('../img/girl-and-coffee.png');
+}
+
+.customer-reviews-content {
+	width: 90%;
+	margin: 0 5%;
+	padding: 30px 0;
+}
+
+.customer-reviews h1 {
+	font-family: Cabin Sketch;
+	font-weight: bold;
+	font-size: 1.75em;
+	line-height: 1.125em;
+}
+
+.customer-reviews p {
+	font-size: .875em;
+	text-align: justify;
+}
+
+/***** CONTACT INFO STYLES *****/
+
+.contact-info {
+	text-align: center;
+	width: 90%;
+	margin: 0 5%;
+	padding: 30px 0;
+}
+
+.contact-titles {
+	width: 100%;
+}
+
+.contact-us {
+	width: 100%;
+}
+
+.contact-info h1 {
+	font-family: Cabin Sketch;
+	font-weight: bold;
+	color: #d0ffb1;
+	line-height: 1.125em;
+	font-size: 2em;
+}
+
+.contact-info h3 {
+	color: #d0ffb1;
+	margin-top: -10px;
+	font-size: 1.125em;
+	padding-bottom: 30px;
+	font-family: Chelsea Market;
+}
+
+.contact-info p {
+	color: #fff;
+	line-height: .5em;
+	font-family: Chelsea Market;
+}
+
+.address, .email {
+	padding-bottom: 40px;
+}
+
+.contact-info ul {
+	list-style: none;
+	padding-top: 40px;
+}
+
+.contact-info ul li {
+	display: inline;
+}
+
+.contact-info ul li:nth-child(1) {
+	margin-left: -30px;
+}
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media (min-width: 768px) {
+    /*
+========================================================
+TABLET STYLES!!!
+========================================================
+	*/
+	
+	/***** HEADER STYLES *****/
+	
+	header {
+		background-image: url("../img/coffee.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		padding-bottom: 20px;
+	}
+	
+	.logo {
+		width: 20%;
+	}
+	
+	header .header-text h1 {
+		font-size: 3em;
+	}
+	
+	.main-img {
+		display: none;
+	}
+	
+	header .header-text h3 {
+		font-size: 1.125em;
+		margin-top: 275px;
+	}
+	
+	header .header-text h6 {
+		font-size: .875em;
+	}
+	
+	/***** SIGN-UP STYLES *****/
+	
+	.sign-up-content {
+		overflow: auto;
+		width: 94%;
+		margin: 0 3%;
+	}
+	
+	.sign-up-text {
+		float: left;
+		width: 48%;
+		margin-left: 2%;
+	}
+	
+	.sign-up-form {
+		width: 48%;
+		float: left;
+		margin-top: -30px;
+		margin-left: 2%;
+	}
+	
+	/***** MENU INFO STYLES *****/
+	
+	.menu-info {
+		overflow: auto;
+		width: 94%;
+		margin: 0 3%;
+	}
+	
+	.menu {
+		width: 48%;
+		float: left;
+	}
+	
+	.products {
+		width: 48%;
+		float: left;
+		margin-left: 4%;
+	}
+	
+	.menu img, .products img {
+		max-width: 100px;
+	}
+	
+	.menu h3 {
+		margin-top: 37px;
+	}
+	
+	/***** CUSTOMER REVIEWS STYLES *****/
+	
+	.customer-reviews {
+		overflow: auto;
+	}
+	
+	.customer-reviews-content h1 {
+		margin-top: 30px;
+		text-align: left;
+	}
+	
+	.customer-reviews-content p {
+		margin-top: -5px;
+	}
+	
+	.customer-img {
+	width: 50%;
+	padding-bottom: 50%;
+	background-position: top;
+	background-size: cover;
+	background-repeat: no-repeat;
+	float: left;
+	}
+
+	#coffee-girl {
+	background-image: url('../img/girl-and-coffee.png');
+	}
+	
+	.customer-reviews-content {
+		float: right;
+		width: 43%;
+		clear: both;
+		margin-top: -400px;
+		padding: 0;
+		margin: -400px 3% 0 0;
+	}
+	
+	/***** CONTACT STYLES *****/
+	
+	.contact-info {
+		width: 94%;
+		margin: 0 3%;
+		overflow: auto;
+	}
+	
+	.contact-titles {
+		width: 48%;
+		float: left;
+		margin-top: 80px;
+	}
+	
+	.contact-us {
+		width: 48%;
+		float: left;
+		margin-left: 4%;
+	}
+}
+
+@media (min-width: 1024px){
+	/*
+	==================================================================================================================
+	DESKTOP STYLES
+	==================================================================================================================
+	*/
+	
+	/***** HEADER STYLES *****/
+	
+	header .header-text h1 {
+		font-size: 3.5em;
+	}
+	
+	header .header-text h3 {
+		font-size: 1.5em;
+	}
+	
+	header .header-text h6 {
+		font-size: 1em;
+	}
+	
+	/***** SIGN UP STYLES *****/
+	
+	.sign-up h1 {
+		font-size: 2.5em;
+		margin-top: 20px;
+	}
+	
+	.sign-up h3 {
+		font-size: 1em;
+	}
+	
+	.sign-up h4 {
+		margin-top: 35px;
+	}
+	
+	/***** MENU INFO STYLES *****/
+	
+	.menu h3 {
+		margin-top: 42px;
+	}
+	
+	.menu h3, .products h3 {
+		font-size: 1.5em;
+	}
+	
+	.menu p, .products p {
+		font-size: 1em;
+	}
+	
+	/***** CUSTOMER REVIEWS STYLES *****/
+	
+	.customer-reviews-content {
+		margin-top: -520px
+	}
+	
+	.customer-reviews-content h1 {
+		font-size: 2.75em;
+	}
+	
+	.customer-reviews-content p {
+		font-size: 1em;
+	}
+	
+	/***** CONTACT STYLES *****/
+	
+	.contact-info h1 {
+		font-size: 2.75em;
+	}
+	
+	.contact-info h3 {
+		font-size: 1.35em;
+	}
+	
+	.contact-info p {
+		font-size: 1.125em;
+	}
+}
+
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
